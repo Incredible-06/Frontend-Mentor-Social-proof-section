@@ -1,0 +1,274 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Spartan', sans-serif;
+    font-size: 16px;
+}
+
+.main-container {
+    margin: 3.4em;
+}
+
+.product-info {
+    position: relative;
+    margin: 0 auto 3.5em;
+}
+
+.product-info .product-presentation {
+    display: inline-block
+}
+
+.product-info .product-presentation h1 {
+    width: 9.1em;
+    font-size: 3.3em;
+    color: hsl(300, 43%, 22%);
+}
+
+.product-info .product-presentation p {
+    width: 30em;
+    color: hsl(303, 10%, 53%);
+    margin-top: .813em;
+    line-height: 1.5;
+}
+
+.product-info .product-rating {
+    display: inline-block;
+    width: 26em;
+    margin-right: .625em;
+    line-height: 5;
+    position: absolute;
+    right: 0;
+}
+
+.product-info .product-rating span {
+    color: hsl(300, 43%, 22%);
+    font-weight: 600;
+    padding-left: 1em;
+}
+
+.product-info .product-rating .star-ratings {
+    background: url(../images/icon-star.svg) repeat-x;
+    display: inline-block;
+    width: 5.313em;
+    height: 1em;
+}
+
+.product-info .product-rating #star-ratings-two {
+    margin-left: 1.5em;
+}
+
+.product-info .product-rating #star-ratings-three {
+    margin-left: 3em;
+}
+
+/* -----------
+      CARDS
+   ----------- */
+
+.cards {
+    margin: 0 auto;
+}
+
+.cards .opinion-cards {
+    display: flex;
+}
+
+.cards .opinion-cards .person {
+    background: rgb(81, 31, 80);
+    display: inline-block;
+    position: relative;
+    width: 22em;
+    height: 14.5em;
+    margin: 0 auto;
+    padding: 2em;
+    border-radius: .8em;
+}
+
+.cards .opinion-cards .person img {
+    border-radius: 50%;
+    width: 3em;
+}
+
+.cards .opinion-cards .person h3 {
+    color: hsl(0, 0%, 100%);
+    font-size: 1em;
+    position: absolute;
+    top: 2.188em;
+    left: 6em;
+}
+
+.cards .opinion-cards .person span {
+    color: hsl(333, 80%, 67%);
+    font-size: .9em;
+    position: relative;
+    top: -.625em;
+    left: .813em;
+}
+
+.cards .opinion-cards .person p{
+    color: hsl(305, 21%, 89%);
+    font-size: 15px;
+    text-align: justify;
+    padding-top: 1.2em;
+}
+
+.cards .opinion-cards #card-one {
+    margin-left: 0;
+}
+
+
+.cards .opinion-cards #card-two {
+    margin-top: 1.5em;
+}
+
+.cards .opinion-cards #card-three {
+    margin-top: 3em;
+    margin-right: 0
+}
+
+@media (max-width:1366px) {
+
+    .main-container {
+        margin: 3em;
+    }
+    
+    .product-info {
+        margin-bottom: 2em;
+    }
+
+    .product-info .product-presentation h1 {
+        font-size: 2.8em;
+    }
+}
+
+@media (max-width:485px) {
+
+    .main-container {
+        width: max-content;
+        margin: 3em auto;
+    }
+
+    .product-info {
+        display: block;
+        width: 24em;
+        height: auto;
+        margin-bottom: 0;
+    }
+
+    .product-info .product-presentation {
+        display: block;
+        text-align: center;
+        margin-bottom: 2em;
+    }
+
+    .product-info .product-presentation h1 {
+        width: auto;
+        font-size: 2.1em;
+    }
+
+    .product-info .product-presentation p {
+        width: auto;
+        margin: 0;
+        padding-top: 1.5em;
+    }
+
+    .product-info .product-rating {
+        display: block;
+        position: initial;
+        width: max-content;
+        margin: 0 auto;
+    }
+
+    .product-info .product-rating span {
+        display: block;
+        width: max-content;
+        margin: 0 auto;
+        padding: 0;
+        position: relative;
+        top: -.938em;
+    }
+
+    .product-info .product-rating .star-ratings {
+        display: block;
+        margin: 0 auto;
+    }
+    
+    .product-info .product-rating #star-ratings-two {
+        margin-left: auto;
+    }
+    
+    .product-info .product-rating #star-ratings-three {
+        margin-left: auto;
+    }
+
+    .cards {
+        width: max-content;
+        margin: 0 auto;
+    }
+
+    .cards .opinion-cards {
+        display: block;
+    }
+
+    .cards .opinion-cards .person {
+        display: block;
+        width: 24em;
+    }
+
+    .cards .opinion-cards #card-one {
+        margin: 0;
+    }
+
+    .cards .opinion-cards #card-two {
+        margin: 1.5em 0;
+    }
+    
+    .cards .opinion-cards #card-three {
+        margin: 0;
+    }
+
+}
+
+@media (max-width:455px) {
+
+    .product-info {
+        width: 22em;
+    }
+
+    .cards .opinion-cards .person {
+        width: 22em;
+    }
+}
+
+@media (max-width:415px) {
+
+    .product-info {
+        width: 21em;
+    }
+
+    .cards .opinion-cards .person {
+        width: 21em;
+    }
+}
+
+@media (max-width:375px) {
+
+    .main-container {
+        margin: 2em auto;
+    }
+
+    .product-info {
+        width: 19em;
+    }
+
+    .product-info .product-presentation h1 {
+        width: auto;
+    }
+
+    .cards .opinion-cards .person {
+        width: 19em;
+    }
+
+}
+
