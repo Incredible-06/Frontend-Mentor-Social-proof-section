@@ -90,7 +90,7 @@
     width: 3em;
 }
 
-.cards .opinion-cards .person h3 {
+.cards .opinion-cards .person h2 {
     color: hsl(0, 0%, 100%);
     font-size: 1em;
     position: absolute;
